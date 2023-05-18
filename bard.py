@@ -13,17 +13,21 @@ def load_lottieurl(url):
     return r.json()
 lottie_science = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_nzw3czxk.json")
 
+
+
+
+st.success("Congratulations on receiving the tablet! May you effectively employ this valuable tool to further your educational achievements.")
 # Web title
 st.title(" Technical Sciences")
 st.header("Resource Page")
-st.subheader("This space is reserved for all Grade 12 Technical Sciences learners")
+st.subheader("_This space is reserved for all Grade 12 Technical Sciences learners_")
 
 with st.container():
     st.write("---")
     left_column, right_column = st.columns(2)
     with left_column:
-         st.subheader("Follow the following instructions to save the files to your tablet:")
-         st.subheader(":red[You must save the files to your tablet so that it is always available offline, so you don't need data once you have downloaded the files]")
+         st.subheader("Please follow the instructions below to save the files to your tablet:")
+         st.subheader(":red[Make sure to save the files to your tablet so that you always have them offline. That way, you won't need data once you've downloaded the files.]")
          st.markdown("""
          - :green[**Click on the button below**]
          - :green[**Once you arive at the folder section, open the folder and select the file you want to download**]
@@ -71,7 +75,92 @@ with right_column:
 
 st.write("---")
 
+with st.container():
+    left_column, right_column = st.columns(2)
+
+    with left_column:
+        st.subheader("More resources from :green[**_Nambane Academy_**]")
+              #CODE FOR THE BUTTON
+        button_html = '''
+        <style>
+        button {
+          border-radius: .25rem;
+          text-transform: uppercase;
+          font-style: normal;
+          font-weight: 400;
+          padding-left: 25px;
+          padding-right: 25px;
+          color: #fff;
+          -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+          clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+          height: 50px;
+          font-size: 0.8rem;
+          line-height: 14px;
+          letter-spacing: 1.2px;
+          transition: .2s .1s;
+          background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+          border: 0 solid;
+          overflow: hidden;
+        }
+
+        button:hover {
+          cursor: pointer;
+          transition: all .3s ease-in;
+          padding-right: 30px;
+          padding-left: 30px;
+        }
+        </style>
+        <button onclick="window.open('https://www.nambaneacademy.com')" type="button">CLICK HERE</button>
+        '''
+
+        components.html(button_html)
+
+    with right_column:
+            st.subheader("Question Papers and Memoranda :blue[**_Per Province_**]")
+                    #CODE FOR THE BUTTON
+            button_html = '''
+            <style>
+            button {
+              border-radius: .25rem;
+              text-transform: uppercase;
+              font-style: normal;
+              font-weight: 400;
+              padding-left: 25px;
+              padding-right: 25px;
+              color: #fff;
+              -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+              clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+              height: 50px;
+              font-size: 0.8rem;
+              line-height: 14px;
+              letter-spacing: 1.2px;
+              transition: .2s .1s;
+              background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+              border: 0 solid;
+              overflow: hidden;
+            }
+
+            button:hover {
+              cursor: pointer;
+              transition: all .3s ease-in;
+              padding-right: 30px;
+              padding-left: 30px;
+            }
+            </style>
+            <button onclick="window.open('https://onedrive.live.com/?authkey=%21ALfjqh56bwzceVA&id=BBDC32500678CC7D%213528&cid=BBDC32500678CC7D')" type="button">CLICK HERE</button>
+            '''
+
+            components.html(button_html)
+
+
+st.write("---")
+
 st.write("Created by Mr Visagie @ Saul Damon High School :wave:")
+
+
+
+
+
 
 
 
