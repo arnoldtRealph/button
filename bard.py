@@ -11,7 +11,7 @@ def load_lottieurl(url):
     if r.status_code != 200:
         return None
     return r.json()
-lottie_science = load_lottieurl("https://assets2.lottiefiles.com/packages/lf20_nzw3czxk.json")
+lottie_science = load_lottieurl("https://assets10.lottiefiles.com/packages/lf20_xduuecr2.json")
 
 
 
