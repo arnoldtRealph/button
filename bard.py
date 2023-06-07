@@ -27,7 +27,7 @@ with st.container():
     left_column, right_column = st.columns(2)
     with left_column:
          st.subheader("Please follow the instructions below to save the files to your tablet:")
-         st.subheader(":red[Make sure to save the files to your tablet so that you always have them offline. That way, you won't need data once you've downloaded the files.]")
+         st.subheader(":blue[Make sure to save the files to your tablet so that you always have them offline. That way, you won't need data once you've downloaded the files.]")
          st.markdown("""
          - :green[**Click on the button below**]
          - :green[**Once you arive at the folder section, open the folder and select the file you want to download**]
