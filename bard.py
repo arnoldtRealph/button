@@ -155,7 +155,7 @@ with st.container():
 
 st.write("---")
 
-st.write("Created by Mr Visagie @ Saul Damon High School :wave:")
+st.subheader("Created by Mr A.R Visagie @ Saul Damon High School :wave:")
 with st.container():
             st.subheader("You can also visit my official website for :blue[**Technical Sciences**] by clicking the button below")
                     #CODE FOR THE BUTTON
